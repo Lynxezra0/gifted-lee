@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: gifted-lee
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: SESSION_ID
+        value: test
+      - key: AUTO_READ_STATUS
+        value: true
+      - key: AUTO_REJECT_CALLS
+        value: false
+      - key: MODE
+        value: public
+      - key: WELCOME
+        value: false
+      - key: AUTO_READ_MESSAGES
+        value: false
+      - key: AUTO_TYPING
+        value: false
+      - key: OWNER_NAME
+        value: Lee
+      - key: OWNER_NUMBER
+        value: 254784640569
+      - key: AUTO_RECORDING
+        value: true
+      - key: ALWAYS_ONLINE
+        value: false
+      - key: AUTO_BLOCK
+        value: false
+      - key: AUTO_REACT
+        value: false
+      - key: PREFIX
+        value: !
